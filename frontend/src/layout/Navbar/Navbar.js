@@ -6,7 +6,7 @@ export default function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="http://localhost:3000/" > User Management </a>
+                    <a className="navbar-brand" href="http://localhost:3000/admin/user/homeuser/" > User Management </a>
                     <button className="navbar-toggler" type="button" 
                         data-bs-toggle="collapse" 
                         data-bs-target="#navbarSupportedContent" 
@@ -16,7 +16,7 @@ export default function Navbar() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <Link className="btn btn-outline-light" to="/adduser"> Add User </Link>
+                    <Link className="btn btn-outline-light" to="/admin/user/adduser"> Add User </Link>
                 </div>
             </nav>
         </div>

@@ -23,7 +23,7 @@ function EditUser() {
     const onSubmit = async (e) => {
         e.preventDefault();
         await axios.put(`http://localhost:8080/api/v1/user/${id}`, user);
-        navigate("/");
+        navigate("/admin/user/homeuser");
     };
 
     useEffect(() => {
@@ -87,7 +87,7 @@ function EditUser() {
                             />
                         </div>
                         <button type="submit" className="btn btn-outline-primary"> Edit </button>
-                        <Link className="btn btn-outline-danger mx-2" to="/"> Cancel </Link>
+                        <Link className="btn btn-outline-danger mx-2" to="/admin/user/homeuser"> Cancel </Link>
                     </form>
                 </div>
             </div>

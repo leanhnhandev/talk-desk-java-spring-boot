@@ -47,8 +47,8 @@ function HomeUser() {
                                     <td>{user.email}</td>
                                     <td>{user.password}</td>
                                     <td>
-                                        <Link className="btn btn-primary mx-2" to={`/viewuser/${user.id}`}> View </Link>
-                                        <Link className="btn btn-outline-primary mx-2" to={`/edituser/${user.id}`}> Edit </Link>
+                                        <Link className="btn btn-primary mx-2" to={`/admin/user/viewuser/${user.id}`}> View </Link>
+                                        <Link className="btn btn-outline-primary mx-2" to={`/admin/user/edituser/${user.id}`}> Edit </Link>
                                         <button className="btn btn-danger mx-2" onClick={() => deleteUser(user.id)}> Delete </button>
                                     </td>
                                 </tr>

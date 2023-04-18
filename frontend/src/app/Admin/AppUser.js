@@ -13,10 +13,10 @@ function AppUser() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<HomeUser />} />
-          <Route exact path="/adduser" element={<AddUser />} />
-          <Route exact path="/edituser/:id" element={<EditUser />} />
-          <Route exact path="/viewuser/:id" element={<ViewUser />} />
+          <Route exact path="/admin/user/homeuser" element={<HomeUser />} />
+          <Route exact path="/admin/user/adduser" element={<AddUser />} />
+          <Route exact path="/admin/user/edituser/:id" element={<EditUser />} />
+          <Route exact path="/admin/user/viewuser/:id" element={<ViewUser />} />
         </Routes>
       </Router>
 

@@ -38,7 +38,7 @@ function ViewUser() {
                             </ul>
                         </div>
                     </div>
-                    <Link className="btn btn-primary my-2" to={"/"}> Back to User Management </Link>
+                    <Link className="btn btn-primary my-2" to="/admin/user/homeuser"> Back to User Management </Link>
                 </div>
             </div>
         </div>

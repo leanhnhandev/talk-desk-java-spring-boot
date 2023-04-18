@@ -21,7 +21,7 @@ function AddUser() {
     const onSubmit = async (e) => {
         e.preventDefault();
         await axios.post("http://localhost:8080/api/v1/users", user);
-        navigate("/");
+        navigate("/admin/user/homeuser");
     };
 
     return (
@@ -76,7 +76,7 @@ function AddUser() {
                             />
                         </div>
                         <button type="submit" className="btn btn-outline-primary"> Add </button>
-                        <Link className="btn btn-outline-danger mx-2" to="/"> Cancel </Link>
+                        <Link className="btn btn-outline-danger mx-2" to="/admin/user/homeuser"> Cancel </Link>
                     </form>
                 </div>
             </div>
